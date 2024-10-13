@@ -1,0 +1,111 @@
+.page {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    width: 100%;
+    max-width: 80%;
+    padding: 0 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 32px;
+    background-color: #F7F7F7;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titleWrap {
+    margin-top: 87px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #071058;
+  }
+  
+  .contentWrap {
+    margin-top: 26px;
+    flex: 1;
+  }
+  
+  .inputTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #262626;
+  }
+  
+  .inputWrap {
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid #e2e0e0;
+  }
+  .inputWrap:focus-within {
+    border: 1px solid #0B1A8A;
+  }
+  
+  .input {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .input::placeholder {
+    color: #dadada;
+  }
+  
+  .bottomButton {
+    width: 100%;
+    height: 48px;
+    border: none;
+    font-weight: bold;
+    border-radius: 64px;
+    background-color: #0B1A8A;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  
+  .bottomButton:disabled {
+    background-color: #dadada;
+    color: white;
+  }
+  
+  .errorMessageWrap {
+    margin-top: 8px;
+    color: #ef0000;
+    font-size: 16px;
+  }
+  
+  
+  .bottomButton-Idloss {
+    width: 80%;
+    height: 48px;
+    border: none;
+    font-weight: bold;
+    border-radius: 64px;
+    background-color: #0B1A8A;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  
+  .bottomButton-Pwloss {
+    width: 80%;
+    height: 48px;
+    border: none;
+    font-weight: bold;
+    border-radius: 64px;
+    background-color: #0B1A8A;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  
+  .loss {
+    display: flex;
+    justify-content: space-between;
+  }
