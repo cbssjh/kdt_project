@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
+
 const User = {
   email: "test@example.com",
   pw: "test2323@@@",
 };
 
 export default function Login() {
+  const navigate = useNavigate();  //useNavigate 훅 사용
   const [email, setEmail] = useState("");
   const [pw, setPw] = useState("");
 
@@ -44,6 +47,7 @@ export default function Login() {
   const onClickConfirmButton = () => {
     if (email === User.email && pw === User.pw) {
       alert("로그인에 성공했습니다.");
+      navigate("/main");
     } else {
       alert("등록되지 않은 회원입니다.");
     }

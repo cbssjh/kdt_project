@@ -1,6 +1,8 @@
 import './App.css'
 import React, { useEffect} from "react";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./components/Login";
+import Main from "./components/Main";
 
 function App() {
 
@@ -11,10 +13,16 @@ function App() {
     });
 
     return (
-        <div className={"App"}>
-            Test
-            <Login/>
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/main" element={<Main />} />
+            </Routes>
+        </Router>
+        //<div className={"App"}>
+        //    Test
+        //    <Login/>
+        //</div>
   );
 }
 
