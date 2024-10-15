@@ -1,0 +1,198 @@
+html, body{
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .our-title {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: 800;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+  }
+  
+  .head img {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  
+  .main-container {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 20px 20px 10px;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 60px); /* Footer 공간을 제외한 높이 */
+  }
+  
+  
+  .head-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+    margin-left: 10px;
+  }
+  
+  /* Job Slider Styles */
+  .job-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 3px;
+    margin-bottom: 20px;
+    height: 420px;
+  }
+  
+  .job-card {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 340px;
+    flex-shrink: 0;
+    cursor: pointer; /* 커서를 바꿔서 클릭 가능한 느낌 */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover 효과: 마우스를 가져다 대면 크기가 커지고 그림자도 커짐 */
+  .job-card:hover {
+    transform: scale(1.1); /* 5% 확대 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  
+  .job-card h3 {
+    font-size: 1.2rem;
+    color: #0B1A8A;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  .job-card p {
+    margin: 5px 0;
+  }
+  
+  .wage {
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }
+  
+  /* Search Filter Section */
+  .search-filter {
+    margin-top: 20px;
+  }
+  
+  .search-filter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .search-filter input {
+    width: 97%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .filter-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filter-button {
+    background-color: #0B1A8A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-button:hover {
+    background-color: #0B1A8A;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    height: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 90vh; /* 화면의 90% 높이만큼 제한 */
+    overflow-y: auto;
+  }
+  
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: bottom;
+  }
+  
+  .close-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .btn-apply{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    margin-top: 20px;
+  }
+  
+  .position{
+    width: 180px;
+  }
+  .position img {
+    width: 160px;
+    margin-left: 20px;
+  }
+  
+  .job-name {
+    font-weight: 700;
+  }
+  
+  .job-time{
+    line-height: 1.2;
+  }
+  
