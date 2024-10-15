@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Main.css";
 import Navbar from "./Navbar";
 import account from "../img/accountant-54.svg";
@@ -11,6 +11,30 @@ const Main = () => {
     const [jobs, setJobs] = useState([]);
     const [selectedJob, setSelectedJob] = useState(null); // 선택된 공고 상태
     const [isModalOpen, setIsModalOpen] = useState(false); // 모달 창 상태
+    const sliderRef = useRef(null);
+    const [touchStart, setTouchStart] = useState(null);
+
+    //터치식 슬라이드
+    const handleTouchStart = (e) => {
+        const firstTouch = e.touches[0].clientX;
+        setTouchStart(firstTouch);
+    };
+
+    const handleTouchMove = (e) => {
+        if (!touchStart) return;
+
+        const currentTouch = e.touches[0].clientX;
+        const difference = touchStart - currentTouch;
+
+        if (sliderRef.current) {
+            sliderRef.current.scrollLeft += difference;
+        }
+    };
+
+    const handleTouchEnd = () => {
+        setTouchStart(null);
+    };
+    //
 
     // 공고 클릭 시 모달 열기 및 해당 공고의 상세 정보 표시
     const handleJobClick = (job) => {
@@ -116,7 +140,11 @@ const Main = () => {
                 </h2>
 
                 {/* Job Slider */}
-                <div className="job-slider">
+                <div className="job-slider"
+                     onTouchStart={handleTouchStart}
+                     onTouchMove={handleTouchMove}
+                     onTouchEnd={handleTouchEnd}
+                     ref={sliderRef}>
                     {jobs.map((job, index) => (
                         <div
                             key={index}
