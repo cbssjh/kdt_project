@@ -1,0 +1,55 @@
+.job-container {
+    width: 100%;
+  }
+  
+  .input-area{
+    position: relative;
+  }
+
+  .search {
+    position: absolute;
+    width: 24px;
+    top: 11.5px;
+    right: 12px;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 28px;
+    border: 1px solid #ccc;
+  }
+  
+  .card {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 323px;
+    height: 161px;
+  }
+  
+  .card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .review-area {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .txt-heart{
+    line-height: 0;
+    font-weight: 700;
+    margin: 0;
+  }

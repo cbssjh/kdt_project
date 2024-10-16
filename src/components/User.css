@@ -1,0 +1,87 @@
+.user-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 330px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  
+
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
+
+  .img-area {
+    border-radius: 32px;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    align-content: center;
+    background-color: #CAD2DF;
+  }
+
+  .img-area img {
+    margin-top: 5px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .user-area {
+    margin-top: 3px;
+    color: #09244B;
+  }
+
+  .user-area h1 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  
+  .user-area p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .user-area p span {
+    font-weight: 700;
+  }
+
+  .setting {
+    height: 24px;
+    margin-top: 1px;
+  }
+  
+  .tab-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .tab-navigation button.active {
+    background-color: #1f3c88;
+    color: white;
+  }
+  
+  .content-area {
+    background-color: #1f3c88;
+    padding: 13.5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
